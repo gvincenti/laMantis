@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mantis</title>
+    <!--Script para agregar iconos-->
+    <script src="https://kit.fontawesome.com/7bbaaed853.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <i class="fa-solid fa-bug">La mantis</i>
+    <li><a href="home.html">Home</a></li>          
+    <h1>Registro</h1>
+
+
+    
+    <form >
+        <div>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre +5 caracteres"  pattern=".{5,50}">
+        </div>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required placeholder="Apellido +5 caracteres"  pattern=".{5,50}">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email +5 caracteres"  pattern=".{5,50}">
+        </div>
+       
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required placeholder="Edad" min="10" max="120" >
+        </div>
+        <div>
+            <label for="sexo">Sexo</label>
+            <select id="genero" name="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="no-declarado">Prefiero no decir</option>
+              </select>
+        </div>
+        <div>
+            <label for="colorFacorito">Color Favorito</label>
+            <input type="color" id="colorFavorito" name="colorFavorito">
+        </div>
+        <div>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required placeholder="Contraseña +8 caracteres" pattern=".{8,50}">
+        </div>
+        <div>
+            <label for="contrasena">Confirmar contraseña:</label>
+            <input type="password" id="confirmarContrasena" name="confirmarContrasena" required placeholder="Confirmar contraseña +8 caracteres"  pattern=".{8,50}">
+        </div>
+       
+        <button type="submit">Finalizar Registro</button>
+    </form>
+
+    <a href="login.html">¿Ya tienes una cuenta?</a>
+</body>
+</html>
