@@ -1,0 +1,241 @@
+/* Estilos del menú */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Separa los elementos a los extremos */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+  
+nav h1 {
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+    
+}
+  
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mostrar los elementos en forma horizontal */
+}
+  
+ul.menu li {
+    margin-left: 10px; /* Espacio entre los elementos del menú */
+}
+  
+ul.menu li:first-child {
+    margin-left: 0; /* Elimina el margen izquierdo del primer elemento */
+}
+  
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+  
+ul.menu li a:hover {
+    background-color: #555;
+}
+
+img{
+    width: 70px; 
+    height: auto;
+}
+
+
+
+
+/*Estilos formulario*/
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input[type="email"],
+form input[type="password"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #555;
+}
+
+
+
+
+/*de que parte es?*/
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.user-info i {
+    font-size: 36px;
+    margin-right: 20px;
+}
+.user-details {
+    text-align: left;
+}
+.user-details label {
+    font-weight: bold;
+}
+.user-details h4 {
+    margin: 5px 0;
+}
+
+#btRegistrarCuenta{
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+
+/*Productos*/
+.product {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.product img {
+    width: 150px;
+    height: 150px; /* Establecemos una altura fija */
+    object-fit: cover; /* Ajustamos la imagen para cubrir el área */
+    margin-right: 20px;
+}
+.product-info {
+    flex: 1;
+}
+.product-info h3 {
+    margin-top: 0;
+}
+.product-info p {
+    margin: 5px 0;
+}
+.product-info button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*Registro*/
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+form div {
+    margin-bottom: 15px;
+}
+label {
+    font-weight: bold;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
+/*
+a {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+}
+*/
+
+
+
+  
+/* Estilos del footer */
+.footer {
+    position: fixed; /* Fija el footer en la parte inferior de la ventana del navegador */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Ancho completo */
+    background-color: #333; /* Color de fondo del footer */
+    color: white; /* Color del texto del footer */
+    padding: 20px 0;
+    text-align: center;
+}
+  
+.footer p {
+    margin: 0;
+}
+  
+.footer a {
+    color: #ccc; /* Color de los enlaces del footer */
+    text-decoration: none;
+}
+  
+.footer a:hover {
+    color: white; /* Cambiar color al pasar el mouse sobre el enlace */
+}
