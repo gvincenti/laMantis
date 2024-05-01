@@ -6,6 +6,7 @@
     <title>La mantis</title>
     <!--Script para agregar iconos-->
     <script src="https://kit.fontawesome.com/7bbaaed853.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
@@ -16,18 +17,14 @@
         </h1>
        
         <ul class="menu">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="HTML/registro.html">Registro</a></li>        
-            <li><a href="HTML/login.html">login</a></li>
-            <li><a href="HTML/perfil.html">Perfil</a></li>
+            <li><a href="../index.html">Inicio</a></li>       
+            <li><a href="login.html">login</a></li>
         </ul>
     </nav>
 
     <h1>Registro</h1>
-
-
-    
-    <form >
+    <form action="submit.php" method="post">
+    <!-- Tu contenido de formulario aquí -->
         <div>
             <label for="Nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required placeholder="Nombre +5 caracteres"  pattern=".{5,50}">
@@ -67,10 +64,13 @@
         </div>
        
         <button type="submit">Finalizar Registro</button>
+    <!-- Agrega el widget de reCAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="6LccNM0pAAAAAGJlfksQnqTbfsEPn5WOJbw3vNjY"></div>
+    
+    <br/>
+    <button type="submit">Enviar</button>
     </form>
-
-    <a href="login.html">¿Ya tienes una cuenta?</a>
-
+    <br/>
     <footer class="footer">
         © [2024] La Mantis. <br>
         Todos los derechos reservados. 
