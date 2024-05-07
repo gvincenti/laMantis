@@ -1,51 +1,111 @@
-/* Estilos del menú */
+/*Estilos para INICO*/
+/* Estilos para la barra de navegación */
 nav {
     background-color: #333;
     color: white;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between; /* Separa los elementos a los extremos */
-    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between;
+    align-items: center;
 }
-  
+
 nav h1 {
-    margin: 0; /* Elimina el margen predeterminado del h1 */
-    
+    margin: 0;
 }
-  
+
 ul.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Mostrar los elementos en forma horizontal */
+    display: flex;
 }
-  
+
 ul.menu li {
-    margin-left: 10px; /* Espacio entre los elementos del menú */
+    margin-left: 10px;
 }
-  
+
 ul.menu li:first-child {
-    margin-left: 0; /* Elimina el margen izquierdo del primer elemento */
+    margin-left: 0;
 }
-  
+
 ul.menu li a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
 }
-  
+
 ul.menu li a:hover {
     background-color: #555;
 }
 
-img{
-    width: 70px; 
+img {
+    width: 70px;
     height: auto;
 }
 
+/* Estilos para la frase de bienvenida */
+.welcome {
+    text-align: center;
+    padding: 20px;
+}
+/* Estilos para la sección de productos disponibles */
+.products {
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+    max-width: 800px; /* Ajusta el ancho máximo según tu preferencia */
+    padding: 20px;
+}
 
+.products h3 {
+    text-align: center;
+}
 
+.content {
+    max-width: 800px; /* Ajusta el ancho máximo según tu preferencia */
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+    padding-bottom: 100px; /* Agrega un espacio al final del contenido para el footer */
+}
 
+.footer {
+    margin-top: 20px; /* Espacio entre el contenido y el footer */
+    height: 50px; /* Altura del footer */
+}
+
+/* Estilos para el texto de relleno */
+.generic-text {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 14px;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .welcome {
+        padding: 10px;
+    }
+    .products {
+        padding: 10px;
+    }
+    .products table {
+        width: 100%;
+        font-size: 14px;
+    }
+    .footer {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu li {
+        margin: 10px 0;
+    }
+}
 /*Estilos formulario*/
 h1 {
     text-align: center;
