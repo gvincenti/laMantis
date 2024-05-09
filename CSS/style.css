@@ -1,4 +1,9 @@
 /*Estilos para INICO*/
+/*LOGO*/
+.mantis{
+height: 100px;
+width: 100px;
+}
 /*Imagen de fondo*/
 
 body {
@@ -13,11 +18,12 @@ body {
 /* Aplicar sombra al texto */
 h1, h2, h3, p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    font-family: 'Inconsolata', monospace; /* Nombre de la fuente */
     
 }
 /* Estilos para la barra de navegación */
 nav {
-    
+    font-family: monospace;
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -70,7 +76,7 @@ img:hover{
 }
 /* Estilos para la grilla */
 /* Estilos para la grilla de imágenes */
-.grid-container {
+.grid-container1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 20px;
@@ -78,18 +84,60 @@ img:hover{
     max-width: 800px;
     padding: 20px;
 }
-.grid-item img {
+.grid-item1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-/* Estilos para el texto de relleno */
-.content {
-    text-align: center;
-    margin: 20px; /* Ajusta el margen del contenido */
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
 }
- 
- 
+.grid-item2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cambia el número de columnas a 3 para mantenerlas del mismo tamaño */
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 100%; /* Para que la grilla ocupe todo el ancho disponible */
+    padding: 20px;
+}
+
+.grid-item3 img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+    object-fit: cover;
+}
+.grid-container4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 20px;
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.grid-item4 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Media query para pantallas más grandes */
+@media screen and (min-width: 1200px) {
+    .enormous-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Estilos para la sección de productos disponibles */
 .products {
     margin: 0 auto; /* Centra horizontalmente el contenido */
@@ -316,29 +364,41 @@ a {
 */
 
 
+   /* Estilos generales del footer */
+   .footer {
+    background-color:#f5f5f5;
+    color: black;
+    padding: 20px;
+    
+}
 
-  
-/* Estilos del footer */
-.footer {
-    font-family: 'Times New Roman', Times, serif;
-    bottom: 0;
-    width: 100%; /* Ancho completo */
-    text-align: left;
-    padding: 20px 0;
-    position: relative; /* Cambia la posición relativa */
-    bottom: 0; /* Ajusta el footer al fondo */
-    color: #000080; /* Azul oscuro */
+/* Estilos para los títulos */
+.footer h2 {
+    margin-top: 0;
+    font-size: 15px;
 }
-  
-.footer p {
-    margin: 0;
-}
-  
+
+/* Estilos para los enlaces */
 .footer a {
- color: #333;
+    color: black;
     text-decoration: none;
+    margin-right: 20px;
 }
-  
-.footer a:hover {
-    color: white; /* Cambiar color al pasar el mouse sobre el enlace */
+
+/* Estilos para los párrafos */
+.footer p {
+    margin: 10px 0;
+}
+
+/* Estilos para el contenedor de grillas del FOOTER*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Estilos para cada ítem de la grilla */
+.grid-item {
+    display: flex;
+    flex-direction: column;
 }
